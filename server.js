@@ -7,5 +7,7 @@ app.get('/', (req, res) => {
 });
 
 app.listen(port, () => {
+    const now = new Date();
+  console.log(`[${now.toISOString()}] Server started successfully.`);
   console.log(`App running at http://localhost:${port}`);
 });
